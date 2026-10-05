@@ -1,34 +1,4 @@
-import requests
-
-res = requests.get("https://jsonplaceholder.typicode.com/users")
-
-data = res.json()
-
-print(res.status_code)
-
-try:
-    if res.status_code == 200:
-        for user_name in data:
-            print(user_name["name"])
-    else:
-        print("there is no such user data not available !")
-except Exception as e:
-    print("An error occurred !", e)
-
-
-def greet(name):
-    user = name
-
-    def inner_greet():
-        return f"Hello, {user}"
-
-    return inner_greet
-
-
-notification = greet("Yadagiri")
-print(notification())
-
-
+# Inheritance
 # Parent class - general animal
 class Person:
     def __init__(self, name, age, work, food):

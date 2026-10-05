@@ -69,9 +69,11 @@ prices = [34, 26, 78, 46, 45, 100]
 
 discount = 0.60
 
-premium_discount = [price * discount for price in prices if price > 50]
-
-print(premium_discount)
+# premium_discount = [price * discount for price in prices if price > 50]
+for price in prices:
+    if price > 50:
+        premium_discount = price * discount
+        print(f"Discounted price: ${premium_discount}")
 
 
 # 5. Early Returns
