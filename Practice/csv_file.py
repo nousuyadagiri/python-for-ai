@@ -3,18 +3,18 @@ import csv
 
 print("Current directory: ", os.getcwd())
 
-# with open("custom.csv", mode="w", newline="") as f:
-#     writer = csv.writer(f)
+with open("custom.csv", mode="w", newline="") as f:
+    writer = csv.writer(f)
 
-#     writer.writerow(["name", "village"])
-#     writer.writerow(["nousu", "lingampally"])
-#     writer.writerow(["sowmya", "nomula"])
+    writer.writerow(["name", "village"])
+    writer.writerow(["nousu", "lingampally"])
+    writer.writerow(["sowmya", "nomula"])
 
-# with open("custom.csv", mode="r") as f:
-#     reader = csv.reader(f)
+with open("custom.csv", mode="r") as f:
+    reader = csv.reader(f)
 
-#     for row in reader:
-#         print(row)
+    for row in reader:
+        print(row)
 
 custom_csv_file = "csv_file.csv"
 

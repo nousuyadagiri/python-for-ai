@@ -1,20 +1,20 @@
 import requests
 import json
 
-# res = requests.get("https://jsonplaceholder.typicode.com/users")
+res = requests.get("https://jsonplaceholder.typicode.com/users")
 
-# data = res.json()
+data = res.json()
 
-# print(res.status_code)
+print(res.status_code)
 
-# try:
-#     if res.status_code == 200:
-#         for user_name in data:
-#             print(user_name["name"])
-#     else:
-#         print("there is no such user data not available !")
-# except Exception as e:
-#     print("An error occurred !", e)
+try:
+    if res.status_code == 200:
+        for user_name in data:
+            print(user_name["name"])
+    else:
+        print("there is no such user data not available !")
+except Exception as e:
+    print("An error occurred !", e)
 
 
 print("--- 2. POST Request (with Request Body) ---")
