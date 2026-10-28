@@ -24,8 +24,8 @@ if not os.path.exists(custom_csv_file):
         writer = csv.writer(f)
 
         writer.writerow(["name", "village"])
-        writer.writerow(["nousu", "lingampally"])
-        writer.writerow(["sowmya", "nomula"])
+        writer.writerows(["nousu", "lingampally"])
+        writer.writerows(["sowmya", "nomula"])
 
         print(f"File '{custom_csv_file}' just now created.")
 
